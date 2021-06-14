@@ -7,17 +7,18 @@
 <script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="qrcode.js"></script>
 </head>
+
 <body>
-<input id="text" type="text" value="http://jindo.dev.naver.com/collie" style="width:80%" /><br />
+<input id="text" type="text" value="Input a text" style="width:80%" /><br />
 <div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
 
 <script type="text/javascript">
-
 var d = new Date();
 var year;
 var month;
 var date;
 var result;
+
 
 year = d.getFullYear();
 
@@ -111,14 +112,20 @@ if(d.getDate() == 1) {
 	date = "31";
 }
 
-result = (year) + (month) + date;
-document.write(result);
+result = (year) + (month) + date + "/GT004098/P/EN/1000000021";
 	
 var qrcode = new QRCode(document.getElementById("qrcode"), {
 	width : 100,
 	height : 100
 });
 
+function makeCode () {		
+	var temp = result;
+	qrcode.makeCode(temp);
+}
+
+makeCode();
+/**
 function makeCode () {		
 	var elText = document.getElementById("text");
 	
@@ -132,7 +139,7 @@ function makeCode () {
 }
 
 makeCode();
-
+*/
 $("#text").
 	on("blur", function () {
 		makeCode();
