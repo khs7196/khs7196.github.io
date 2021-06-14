@@ -9,7 +9,6 @@
 </head>
 
 <body>
-<input id="text" type="text" value="Input a text" style="width:80%" /><br />
 <div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
 
 <script type="text/javascript">
@@ -125,21 +124,7 @@ function makeCode () {
 }
 
 makeCode();
-/**
-function makeCode () {		
-	var elText = document.getElementById("text");
-	
-	if (!elText.value) {
-		alert("Input a text");
-		elText.focus();
-		return;
-	}
-	
-	qrcode.makeCode(elText.value);
-}
 
-makeCode();
-*/
 $("#text").
 	on("blur", function () {
 		makeCode();
