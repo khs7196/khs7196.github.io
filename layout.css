@@ -1,0 +1,367 @@
+@charset "utf-8";
+
+/***** Subtitle Styling *****/
+.sub-title {
+	display: block;
+}
+
+.title-area {
+	display: inline-block;
+}
+
+.button-area {
+	display: float;
+	float: right;
+}
+
+.helper-text {
+    display: block;
+    padding-left: 23%;
+    padding-top: 0.5em;
+    clear: both;
+    font-size: 0.9rem;
+    color: rgb(133, 133, 133);
+    font-style: italic;
+}
+@media (max-width: 480px) {
+	.helper-text {
+		padding-left: 0;
+	}
+}
+
+/***** Dialogs *****/
+.dialog-header {
+	padding: 0.2em 1em;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: rgb(54,76,97);
+	color: white;
+	text-shadow: none;
+}
+
+.dialog-content {
+	padding: 0.2em 1em;
+	overflow: auto;
+}
+
+.dialog-section {
+	border: 2px solid #c7d9ec;
+	border-radius: 8px;
+	padding: 0.5em;
+	margin-bottom: 0.2em;
+}
+
+.dialog-section-header {
+	border-bottom: 1px dashed #c7d9ec;
+	margin: 0 0.2em 0.2em 0.2em;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #248cfb;
+}
+
+.dialog-section-content {
+	margin: 0.5em 0.2em 0.2em 0.2em;
+	font-size: 0.9em;
+}
+
+/***** Login *****/
+#login-page {
+	background: url("../images/login_bg.png") no-repeat bottom left;
+	background-position-x: -115px;
+}
+#login-panel {
+	max-width: 325px;
+	margin: auto;
+}
+.logo {
+	display: block;
+	background: url("../images/login_logo.png") no-repeat bottom left;
+	width: 9.5rem;
+	height: 2.5rem;
+}
+@media (min-width: 480px) {
+	#login-page {
+		background-position-x: left;
+	}
+	#login-panel {
+		margin-left: 140px;
+	}
+	.lnb_wrap {
+		display:none;
+	}
+}
+@media (min-height: 780px) {
+	#login-panel {
+		position: absolute;
+		bottom: 425px;
+	}
+}
+.user-info {
+	display: inline-block;
+}
+
+/***** Top *****/
+#menu-button {
+	height: 1.75rem;
+	position: absolute;
+	top: 1.375rem;
+	left: 1.375rem;
+}
+
+#alert-popup {
+	background-color: white;
+}
+
+#UserTitle {
+	-webkit-margin-before: 0em !important;
+	-webkit-margin-after: 0em !important;
+	padding: 0em 0em;
+	line-height: 1em;
+	/* min-height: 1em; */
+	font-size: 1rem;
+	height: 2rem;
+}
+
+#language-select {
+	position: absolute;
+	right: 25px;
+}
+
+#logoutButton {
+	position:absolute;
+	height:1.75rem;
+	top:1.375rem;
+	right:1.375rem;
+}
+
+/***** Main *****/
+.text {
+	font-family: 'RobotoCondensed-Regular';
+	font-weight: 400;
+}
+#main-panel-notice-view {
+	min-width: 300px;
+}
+#main-panel {
+	background: url("../images/main_bg.jpg") no-repeat top center #222222;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+#main-wrapper {
+	max-width: 600px;
+	margin: 0 auto;
+}
+#main-intro-text {
+	text-align: center;
+	max-width: 600px;
+}
+#main-text-1 {
+	font-size: 45px;
+	color: #176422;
+	margin: auto;
+}
+#main-text-2 {
+	font-size: 15px;
+	color: #555555;
+	margin: auto;
+	margin-top: 10px;
+}
+.qmenu-btn-with-icon {
+	display: block;
+	background: url("../images/main_qmenu_btn.png") no-repeat;
+	margin: 0 auto;
+	width: 62px;
+	height: 52px;
+}
+.qmenu-btn-icon01 {
+	background-position: 4px 1px;
+}
+.qmenu-btn-icon02 {
+	background-position: -98px 1px;
+}
+.qmenu-btn-icon03 {
+	background-position: -199px 1px;
+}
+#main-notice-list {
+	list-style-type: none;
+}
+.notice-link {
+	position: absolute;
+	left: 1em;
+}
+.notice-date {
+	position: absolute;
+	right: 1em;
+}
+.quota_box {
+	max-width: 600px;
+}
+.bottom_area {
+	max-width: 600px;
+}
+
+/***** PayStub ****/
+#pay-stub-panel {
+	max-width: 800px;
+}
+
+@media (min-width: 480px) {
+	#pay-stub-detail-page {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 6.3em;
+		padding: 0;
+	}
+	
+	#pay-stub-pdf-display {
+		width: 100%;
+		height: 99%; /* Prevent scrollbar on parent div */
+	}
+}
+
+.round-corners {
+	border: 2px solid #c7d9ec;
+	border-radius: 8px;
+	padding: 0.5em;
+	margin-bottom: 1em;
+	vertical-align: middle;
+	overflow: auto;
+}
+
+/***** Pay Stub Detail *****/
+.address {
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgb(204, 204, 204);
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 0.8em;
+}
+
+.paystub-side-bar,
+.paystub-main {
+	display: block;
+	width: 100%;
+}
+
+.paystub-personal-table {
+	empty-cells: hide;
+}
+
+.line-break-row {
+	display: none;
+}
+
+@media print, screen and (min-width: 480px) {
+	.paystub-side-bar {
+		float: left;
+		width: 37%;
+	}
+	
+	.paystub-main {
+		float: left;
+		width: 60%;
+		margin-left: 2%;
+	}
+	
+	.paystub-personal-table {
+		empty-cells: show;
+	}
+	
+	.line-break-row {
+		display: table-row;
+	}
+}
+
+@media print {
+	@page {
+		margin: 25mm 25mm 25mm 25mm;
+	}
+	body {
+		font-size: 90%;
+		margin: 0px;
+	}
+	#pay-stub-detail-header {
+		display: none;
+	}
+	#pay-stub-detail-footer {
+		padding-left: 1em;
+		max-height: 3.5em;
+	}
+}
+
+/***** Tax Allowance *****/
+@media screen and (min-width: 480px) {
+	#federal-tax-form {
+		width: 49%;
+		float: left;
+		clear: both; /* clearfix */
+	}
+	
+	#state-tax-form {
+		width: 49%;
+		float: right;
+	}
+
+
+	.control-placeholder {
+		height: 5em;
+	}
+}
+
+/***** Punch In/Out *****/
+@media (min-width: 480px) {
+	#time-clock-punch-panel {
+		width: 49%;
+		float: left;
+	}
+	
+	#time-clock-search-panel {
+		width: 49%;
+		float: right;
+	}
+}
+
+/***** Absence List *****/
+@media (min-width: 480px) {
+	#absence-list-view {
+		min-width: 32em;
+	}
+}
+
+/***** Notices *****/
+.notice-content {
+	word-wrap: break-word;
+	white-space: pre;
+	white-space: -moz-pre-wrap;
+	white-space: pre-wrap;
+}
+
+/***** Menu Management *****/
+.menu-mgmt-no-access {
+	background-color: #FFBFBF !important; 
+}
+
+.menu-mgmt-yes-access {
+	background-color: #BFFFBF !important;
+}
+
+@media (min-width: 480px) {
+	#menu-mgmt-edit {
+		min-width: 32em;
+	}
+}
+	
+/***** User Management *****/
+@media (min-width: 480px) {
+	#user-mgmt-edit {
+		min-width: 32em;
+	}
+}
+
