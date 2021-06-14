@@ -8,8 +8,17 @@
 <script type="text/javascript" src="qrcode.js"></script>
 </head>
 
-<body>
-<div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
+<body class="ui-mobile-viewport ui-overlay-a">
+<br>
+<br>
+<br>
+<br>
+<div align="center">
+	<br>
+	<div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
+	<br>
+	<div id='info' style="align:center;text-align:center;font-weight:bold;font-size:18px"></div>
+</div>
 
 <script type="text/javascript">
 var d = new Date();
@@ -123,6 +132,8 @@ function makeCode () {
 	qrcode.makeCode(temp);
 }
 
+document.getElementById("info").innerText = result;
+
 makeCode();
 
 $("#text").
@@ -134,5 +145,7 @@ $("#text").
 			makeCode();
 		}
 	});
+	
+
 </script>
 </body>
